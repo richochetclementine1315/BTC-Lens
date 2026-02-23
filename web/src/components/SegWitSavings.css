@@ -1,0 +1,137 @@
+.segwit-headline {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+/* Ring */
+.savings-ring {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.ring-svg {
+    width: 80px;
+    height: 80px;
+}
+
+.ring-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ring-pct {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--blue);
+    line-height: 1;
+}
+
+.ring-sub {
+    display: block;
+    font-size: 9px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+/* Stats */
+.segwit-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.sw-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.sw-stat:last-child {
+    border-bottom: none;
+}
+
+.sw-stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.sw-stat-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.legacy-weight {
+    color: var(--red);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Bars */
+.bars-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bar-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bar-value {
+    font-size: 11px;
+    color: var(--text-secondary);
+    font-family: var(--mono);
+    width: 90px;
+    text-align: right;
+}
+
+.segwit-explainer {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+}
+
+.segwit-explainer strong {
+    color: var(--text-secondary);
+}

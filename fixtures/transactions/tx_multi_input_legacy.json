@@ -1,0 +1,18 @@
+{
+  "network": "mainnet",
+  "raw_tx": "0200000002aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0000000000ffffffffbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb0100000000feffffff02b80b0000000000001976a9140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f88aca00f000000000000160014101010101010101010101010101010101010101000000000",
+  "prevouts": [
+    {
+      "txid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "vout": 0,
+      "value_sats": 5000,
+      "script_pubkey_hex": "76a914111111111111111111111111111111111111111188ac"
+    },
+    {
+      "txid": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "vout": 1,
+      "value_sats": 4000,
+      "script_pubkey_hex": "76a914121212121212121212121212121212121212121288ac"
+    }
+  ]
+}

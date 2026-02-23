@@ -1,0 +1,189 @@
+.flow-layout {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 16px;
+    align-items: start;
+    min-height: 120px;
+}
+
+.flow-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flow-col-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.flow-total {
+    font-family: var(--mono);
+    color: var(--text-primary);
+    font-size: 11px;
+}
+
+.flow-nodes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Input nodes — blue left border */
+.flow-node {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.flow-node:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(2px);
+}
+
+.input-node {
+    border-left: 3px solid var(--blue);
+}
+
+.output-node {
+    border-left: 3px solid var(--green);
+}
+
+.op-return-node {
+    border-left: 3px solid var(--text-muted);
+    opacity: 0.7;
+}
+
+.node-index {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.node-address {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.node-amount {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.script-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.op-return-text {
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+    word-break: break-all;
+}
+
+/* Center arrow + fee */
+.flow-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 48px;
+    min-width: 120px;
+}
+
+.flow-arrow-line {
+    width: 2px;
+    height: 24px;
+    background: linear-gradient(to bottom, transparent, var(--accent));
+}
+
+.flow-arrow-head {
+    font-size: 24px;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.fee-bubble {
+    background: var(--accent-dim);
+    border: 1px solid var(--border-glow);
+    border-radius: 12px;
+    padding: 10px 14px;
+    text-align: center;
+    min-width: 110px;
+    order: -1;
+}
+
+.fee-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.fee-amount {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.fee-rate,
+.fee-pct {
+    font-size: 10px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .flow-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .flow-center {
+        flex-direction: row;
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    .flow-arrow-line {
+        width: 24px;
+        height: 2px;
+        background: linear-gradient(to right, transparent, var(--accent));
+    }
+
+    .flow-arrow-head {
+        font-size: 18px;
+    }
+}
