@@ -1,6 +1,6 @@
 # BTC Lens
 
-BTC Lens is a Bitcoin blockchain analysis toolkit featuring a CLI and a web interface. It enables parsing, grading, and visualizing Bitcoin blocks and transactions. The project uses Go (with Gin for the web backend), React (JSX), and Bash scripts. CI/CD is managed via GitHub Actions.
+ A CLI tool that turns a raw Bitcoin transaction into a precise, machine-checkable JSON report, and a web visualizer (built on top of the same logic) that explains the transaction to non-technical users with diagrams, annotations, and friendly language.
 
 ---
 
