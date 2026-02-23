@@ -100,6 +100,6 @@ npm run dev
 
 ---
 
-## License
+## YouTube Link
 
-MIT License. See [LICENSE](LICENSE) for details.
+- **Coming Soon**
